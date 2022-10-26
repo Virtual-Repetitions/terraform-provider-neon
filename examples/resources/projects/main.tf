@@ -1,0 +1,17 @@
+terraform {
+  required_providers {
+    neon = {
+      source = "example.org/virtual-repetitions/neon"
+    }
+  }
+}
+
+provider "neon" { }
+
+resource "neon_project" "example" {
+  name = "example-project"
+  instance_handle = "scalable"
+  platform_id = "aws"
+  region_id = "aws-us-west-2"
+}
+
