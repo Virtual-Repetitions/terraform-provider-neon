@@ -6,12 +6,12 @@ terraform {
   }
 }
 
-provider "neon" { }
+provider "neon" {}
 
 resource "neon_project" "example" {
-  name = "example-project"
+  name            = "example-project"
   instance_handle = "scalable"
-  platform_id = "aws"
-  region_id = "aws-us-west-2"
+  platform_id     = "aws"
+  region_id       = "aws-us-west-2"
 }
 
